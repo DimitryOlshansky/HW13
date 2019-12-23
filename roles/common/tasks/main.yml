@@ -1,0 +1,8 @@
+---
+- name: install zip and vim
+  apt: name={{item}} state=installed
+  sudo: yes
+  with_items:
+    - zip
+    - vim
+...
